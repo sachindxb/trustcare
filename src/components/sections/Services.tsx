@@ -1,4 +1,10 @@
-export default function Services() {
+import React, { FC } from 'react';
+
+interface ServicesProps {
+  name: string;
+}
+
+const Services: FC<ServicesProps> = ({ name }) => {
   const services = [
     {
       title: "Cosmetic Dermatology",
@@ -24,7 +30,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50" id={name}>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-[#2C5282] mb-12">
           Our Services
@@ -64,4 +70,6 @@ export default function Services() {
       </div>
     </section>
   );
-}
+};
+
+export default Services;

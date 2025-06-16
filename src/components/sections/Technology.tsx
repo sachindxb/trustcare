@@ -1,4 +1,10 @@
-export default function Technology() {
+import React, { FC } from 'react';
+
+interface TechnologyProps {
+  name: string;
+}
+
+const Technology: FC<TechnologyProps> = ({ name }) => {
   const technologies = [
     {
       name: "Hydracool plus",
@@ -23,7 +29,7 @@ export default function Technology() {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white" id={name}>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-[#2C5282] mb-4">
           Technology At Our Clinic
@@ -51,4 +57,6 @@ export default function Technology() {
       </div>
     </section>
   );
-}
+};
+
+export default Technology;

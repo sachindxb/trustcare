@@ -1,7 +1,11 @@
 'use client';
-import { useState } from 'react';
+import { useState, FC } from 'react';
 
-export default function Contact() {
+interface ContactProps {
+  name: string;
+}
+
+const Contact: FC<ContactProps> = ({ name }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,7 +30,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50" id={name}>
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
           {/* Contact Information */}
@@ -125,4 +129,6 @@ export default function Contact() {
       </div>
     </section>
   );
-}
+};
+
+export default Contact;

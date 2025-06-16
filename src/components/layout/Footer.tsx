@@ -12,7 +12,7 @@ export default function Footer() {
               <li><Link href="/about" className="hover:text-[#48BB78]">About</Link></li>
               <li><Link href="/services" className="hover:text-[#48BB78]">Services</Link></li>
               <li><Link href="/contact" className="hover:text-[#48BB78]">Contact</Link></li>
-              <li><Link href="/book-appointment" className="hover:text-[#48BB78]">Book Appointment</Link></li>
+              <li><Link href="/bookappointment" className="hover:text-[#48BB78]">Book Appointment</Link></li>
             </ul>
           </div>
           <div>
