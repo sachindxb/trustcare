@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Hero, Services, Technology, Contact } from '@/components/sections';
+import { Hero, Services, Technology, BookAppointment, Contact } from '@/components/sections';
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <Hero name="hero" />
       <Services name="services" />
       <Technology name="technology" />
+      <BookAppointment name="book-appointment" />
       <Contact name="contact" />
     </>
   );
